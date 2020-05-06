@@ -13,6 +13,46 @@ public class SkuLsParams implements Serializable {
 
     String catalog3Id;
 
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
+    }
+
+    public void setCatalog3Id(String catalog3Id) {
+        this.catalog3Id = catalog3Id;
+    }
+
+    public void setValueId(String[] valueId) {
+        this.valueId = valueId;
+    }
+
+    public void setPageNo(int pageNo) {
+        this.pageNo = pageNo;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
+    }
+
+    public String getKeyword() {
+        return keyword;
+    }
+
+    public String getCatalog3Id() {
+        return catalog3Id;
+    }
+
+    public String[] getValueId() {
+        return valueId;
+    }
+
+    public int getPageNo() {
+        return pageNo;
+    }
+
+    public int getPageSize() {
+        return pageSize;
+    }
+
     String[] valueId;
 
     int pageNo=1;

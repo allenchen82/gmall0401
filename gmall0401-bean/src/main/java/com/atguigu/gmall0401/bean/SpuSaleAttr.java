@@ -17,6 +17,46 @@ public class SpuSaleAttr  implements Serializable {
     @Column
     String id ;
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setSpuId(String spuId) {
+        this.spuId = spuId;
+    }
+
+    public void setSaleAttrId(String saleAttrId) {
+        this.saleAttrId = saleAttrId;
+    }
+
+    public void setSaleAttrName(String saleAttrName) {
+        this.saleAttrName = saleAttrName;
+    }
+
+    public void setSpuSaleAttrValueList(List<SpuSaleAttrValue> spuSaleAttrValueList) {
+        this.spuSaleAttrValueList = spuSaleAttrValueList;
+    }
+
+    public String getSpuId() {
+        return spuId;
+    }
+
+    public String getSaleAttrId() {
+        return saleAttrId;
+    }
+
+    public String getSaleAttrName() {
+        return saleAttrName;
+    }
+
+    public List<SpuSaleAttrValue> getSpuSaleAttrValueList() {
+        return spuSaleAttrValueList;
+    }
+
     @Column
     String spuId;
 

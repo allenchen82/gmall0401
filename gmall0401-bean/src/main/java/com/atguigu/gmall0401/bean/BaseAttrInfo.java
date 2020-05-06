@@ -21,5 +21,36 @@ public class BaseAttrInfo implements Serializable {
     @Transient
     private List<BaseAttrValue> attrValueList;
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setAttrName(String attrName) {
+        this.attrName = attrName;
+    }
+
+    public void setCatalog3Id(String catalog3Id) {
+        this.catalog3Id = catalog3Id;
+    }
+
+    public void setAttrValueList(List<BaseAttrValue> attrValueList) {
+        this.attrValueList = attrValueList;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getAttrName() {
+        return attrName;
+    }
+
+    public String getCatalog3Id() {
+        return catalog3Id;
+    }
+
+    public List<BaseAttrValue> getAttrValueList() {
+        return attrValueList;
+    }
 }
 

@@ -20,6 +20,11 @@ public class UserAddress implements Serializable {
     String id ;
     @Column
     String userAddress;
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
     @Column
     String userId;
     @Column

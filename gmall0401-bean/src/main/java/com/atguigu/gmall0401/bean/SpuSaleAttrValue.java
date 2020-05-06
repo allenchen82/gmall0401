@@ -26,8 +26,48 @@ import java.io.Serializable;
         @Column
         String saleAttrValueName;
 
-        @Transient
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setSpuId(String spuId) {
+        this.spuId = spuId;
+    }
+
+    public void setSaleAttrId(String saleAttrId) {
+        this.saleAttrId = saleAttrId;
+    }
+
+    public void setSaleAttrValueName(String saleAttrValueName) {
+        this.saleAttrValueName = saleAttrValueName;
+    }
+
+    public void setIsChecked(String isChecked) {
+        this.isChecked = isChecked;
+    }
+
+    @Transient
         String isChecked;
+
+    public String getId() {
+        return id;
+    }
+
+    public String getSpuId() {
+        return spuId;
+    }
+
+    public String getSaleAttrId() {
+        return saleAttrId;
+    }
+
+    public String getSaleAttrValueName() {
+        return saleAttrValueName;
+    }
+
+    public String getIsChecked() {
+        return isChecked;
+    }
 }
 
 

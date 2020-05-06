@@ -16,10 +16,20 @@ public class UserInfo implements Serializable {
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
+
+    public String getPasswd() {
+        return passwd;
+    }
+
     @Column
     private String loginName;
     @Column
     private String nickName;
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
+    }
+
     @Column
     private String passwd;
     @Column

@@ -26,6 +26,77 @@ public class OrderInfo implements Serializable {
     @Column
     private String consigneeTel;
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setConsignee(String consignee) {
+        this.consignee = consignee;
+    }
+
+    public void setConsigneeTel(String consigneeTel) {
+        this.consigneeTel = consigneeTel;
+    }
+
+    public void setTotalAmount(BigDecimal totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public void setOrderStatus(OrderStatus orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public void setProcessStatus(ProcessStatus processStatus) {
+        this.processStatus = processStatus;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public void setPaymentWay(PaymentWay paymentWay) {
+        this.paymentWay = paymentWay;
+    }
+
+    public void setExpireTime(Date expireTime) {
+        this.expireTime = expireTime;
+    }
+
+    public void setDeliveryAddress(String deliveryAddress) {
+        this.deliveryAddress = deliveryAddress;
+    }
+
+    public void setOrderComment(String orderComment) {
+        this.orderComment = orderComment;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public void setParentOrderId(String parentOrderId) {
+        this.parentOrderId = parentOrderId;
+    }
+
+    public void setTrackingNo(String trackingNo) {
+        this.trackingNo = trackingNo;
+    }
+
+    public void setOrderDetailList(List<OrderDetail> orderDetailList) {
+        this.orderDetailList = orderDetailList;
+    }
+
+    public void setOrderSubList(List<OrderInfo> orderSubList) {
+        this.orderSubList = orderSubList;
+    }
+
+    public void setWareId(String wareId) {
+        this.wareId = wareId;
+    }
+
+    public void setOutTradeNo(String outTradeNo) {
+        this.outTradeNo = outTradeNo;
+    }
 
     @Column
     private BigDecimal totalAmount;
